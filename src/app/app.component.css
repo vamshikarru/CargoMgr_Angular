@@ -1,0 +1,34 @@
+.header{
+  color: white;
+}
+.inbound{
+  background-color: #91bbff;
+  height: 90vh;
+}
+.outbound{
+  background-color: #efe39e;
+  height: 90vh;
+}
+.scrollContainer{
+  /*overflow-x: auto;
+    overflow-y: auto;*/
+  overflow: auto;
+}
+.container{
+  min-width: 97%;
+}
+th, td{
+  text-align: center;
+}
+.scrollTable{
+  overflow-y: scroll;
+  height: 200px;
+}
+.navbar{
+  margin-bottom: 0px;
+  background-color: #0c0d0e;
+}
+.cells{
+  border: 1px solid black !important;
+}
+

@@ -1,0 +1,81 @@
+<div class="navbar">
+  <h4 class="header">CargoMgrIO</h4>
+  <!--<img style="float: right;" src="https://www.bizcloudexperts.com/wp-content/uploads/2117/18/cropped-BizCloud-Official-Logo-e1512182281597.png">-->
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 inbound scrollContainer">
+     <h4 style="text-align: center">Inbound Flights</h4>
+      <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>C</th>
+          <th>Flight</th>
+          <th>Gate</th>
+          <th>SKA</th>
+          <th>ETA</th>
+          <th>Equip</th>
+          <th>Tail</th>
+          <th>Orig</th>
+          <th>Units</th>
+          <th>Status</th>
+          <th>Driver</th>
+        </tr>
+        </thead>
+        <tbody class="scrollTable" *ngFor="let flight of stageValues">
+        <tr class="list-group" *ngIf="(flight.IN_OUT_FLAG === 0)">
+          <td >{{flight.ACTUAL_COMPLEX}}</td>
+          <td>{{flight.FLTNUM}}</td>
+          <td>{{flight.ACTUAL_GATE}}</td>
+          <td>{{flight.SCHED_ARV_DEPRT}}</td>
+          <td>{{flight.ACTUAL_ARV_DEPRT}}</td>
+          <td>{{flight.ACTUAL_EQUIP_CODE}}</td>
+          <td>{{flight.ACTUAL_EQUIP_TAILNO}}</td>
+          <td>{{flight.ORIGIN_CITY}}</td>
+          <td>{{flight.TOTAL_UNITS}}</td>
+          <td>{{flight.FLIGHT_STATUS}}</td>
+          <td>{{flight.PRIMARY_DRIVERNAME}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 outbound scrollContainer">
+      <h4 style="text-align: center">Outbound Flights</h4>
+      <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>C</th>
+          <th>Flight</th>
+          <th>Gate</th>
+          <th>SKA</th>
+          <th>ETA</th>
+          <th>Equip</th>
+          <th>Tail</th>
+          <th>Orig</th>
+          <th>Units</th>
+          <th>Status</th>
+          <th>Driver</th>
+        </tr>
+        </thead>
+        <tbody class="scrollTable" *ngFor="let flight of stageValues">
+        <tr class="list-group" *ngIf="(flight.IN_OUT_FLAG === 1)">
+          <td >{{flight.ACTUAL_COMPLEX}}</td>
+          <td>{{flight.FLTNUM}}</td>
+          <td>{{flight.ACTUAL_GATE}}</td>
+          <td>{{flight.SCHED_ARV_DEPRT}}</td>
+          <td>{{flight.ACTUAL_ARV_DEPRT}}</td>
+          <td>{{flight.ACTUAL_EQUIP_CODE}}</td>
+          <td>{{flight.ACTUAL_EQUIP_TAILNO}}</td>
+          <td>{{flight.ORIGIN_CITY}}</td>
+          <td>{{flight.TOTAL_UNITS}}</td>
+          <td>{{flight.FLIGHT_STATUS}}</td>
+          <td>{{flight.PRIMARY_DRIVERNAME}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
