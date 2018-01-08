@@ -29,9 +29,9 @@ You will need the following things properly installed on your computer.
 
 * `ng build` (development)
 * `ng build -- prod` (production)
-* Generates dist directory with post build files in it.
+* Generates `dist` directory with post build files in it.
 
 ### Deploying
 
 Specify what it takes to deploy your app.
-* Use the files in dist as artifact to deploy on any web server(tomcat, http)
+* Use the files in `dist` as artifact to deploy on any web server(tomcat, http)
