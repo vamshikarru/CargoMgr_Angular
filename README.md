@@ -23,7 +23,7 @@ You will need the following things properly installed on your computer.
 * `ng serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * `ng serve --port <port no.>`
-* Visit your app at [http://localhost:<port no.>](http://localhost:<port no.>).
+* Visit your app at [http://localhost:port no.](http://localhost:portno).
 
 
 
